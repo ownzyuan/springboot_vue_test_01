@@ -1,0 +1,16 @@
+spring:
+  datasource:
+    #注意使用时区
+    url: jdbc:mysql://localhost:3306/test?serverTimezone=UTC&useUnicode=true&characterEncoding=UTF-8
+    username: root
+    password: 123456
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    #打印Sql到控制台
+    show-sql: false
+    properties:
+      hibernate:
+        #format_sql：格式化打印出来的sql，不会一行全显示
+        format_sql: true
+server:
+  port: 8181
